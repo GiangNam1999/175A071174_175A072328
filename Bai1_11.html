@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo form và các điều khiển trên form</title>
+    <style>
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            color: #c23616;
+        }
+
+        #Flogin {
+            background-color: lavender;
+            height: 300px; 
+            width: 400px;
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Đăng nhập</h1>
+    <form id="Flogin">
+        <table border="2" style="height: 100%; width: 100%;">
+            <tr>
+                <th>Mã người dùng: </th>
+                <td> <input type="text" name="login"></td>
+            </tr>
+            <tr>
+                <th>Mật khẩu:</th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Đăng nhập" onclick="show.innerText=login.value""></td> 
+            </tr>
+            <tr> 
+                <td colspan=" 2" align="center">
+                    <div id="show"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài tập tổng hợp</title>
+    <style>
+        table,
+        td {
+            border-collapse: collapse;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        table a {
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table td span {
+            color: rgb(0, 129, 250);
+        }
+
+        #header {
+            position: relative;
+        }
+
+        #header img,
+        .content img,
+        .list-content img {
+            position: relative;
+            object-fit: cover;
+            width: 15%;
+            height: 100px;
+        }
+
+        #header img:nth-child(1) {
+            float: left;
+        }
+
+        #header img:nth-child(1) {
+            float: right;
+        }
+
+        #header span:nth-child(1) {
+            font-size: 60px;
+        }
+
+        #header span:nth-child(2) {
+            font-size: 45px;
+        }
+
+        #header span:nth-child(3) {
+            font-size: 30px;
+        }
+
+        #header a {
+            color: rgb(26, 89, 184);
+            font-weight: 600;
+            position: absolute;
+            left: 25%;
+        }
+
+        #sidebar {
+            position: relative;
+            width: 20%;
+            text-decoration: underline;
+            vertical-align: top;
+        }
+
+        #sidebar ul li {
+            padding: 6px 0;
+        }
+
+        .title-heading {
+            background-color: rgb(26, 89, 184);
+        }
+
+        .title-heading a {
+            color: #FFF;
+        }
+
+        .scrollTop {
+            float: right;
+            text-decoration: underline;
+            background-color: rgb(163, 163, 163);
+            padding: 2px 2px;
+        }
+
+        .content,
+        .list-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .content p {
+            margin: 0;
+            padding: 0 5px;
+            text-align: left;
+        }
+
+        .list-content img {
+            float: right;
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2" id="header">
+                <img src="./img/img16-1.jpg" alt="">
+                <img src="./img/img16-2.jpg" alt="">
+                <a href="#" id="scrollTop"><span>Ai?</span><span> Cái gì?</span><span> Ở đâu? ...</span></a>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="14" id="sidebar">
+                <ul id="circle-style">
+                    <li><a href="#loveandfamily">Tình yêu và gia đình</a></li>
+                    <li><a href="#healthy">Sức khoẻ</a></li>
+                    <li><a href="#travel">Du lịch</a></li>
+                    <li><a href="#foods">Ẩm thực</a></li>
+                    <li><a href="#music">Âm nhạc</a></li>
+                </ul>
+            </td>
+            <td class="title-heading">
+                <a href="#loveandfamily" id="loveandfamily">Tình yêu và gia đình</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Trầu cau</span>
+                <div class="content">
+                    <img src="./img/img16-3.jpg" alt="">
+                    <p>Tình yêu là gì? Là ta yêu một người mỗi ngày trong một năm. Mỗi năm trong một cuộc đời...</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Xây dựng hạnh phúc gia đình qua những bữa cơm hằng ngày</span>
+                <div class="content">
+                    <img src="./img/img16-4.jpg" alt="">
+                    <p>Nói đến hạnh phúc gia đình chúng ta thường mô tả bằng nhưanxg từ thật đẹp đẽ và được thể hiện uqa
+                        những giá trị đạo đức rất đáng trân trọng như tình yêu, lòng chung thuỷ...</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="title-heading">
+                <a href="#healthy" id="healthy">Sức khoẻ</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>10 lời khuyên trong dinh dưỡng</span>
+                <div class="content">
+                    <img src="./img/img16-5.jpg" alt="">
+                    <p>Cơ thể chúng ta cần nhiều chất dinh dưỡng từ nhiều nguồn năng lượng thực khác nhau. Vì vậy chúng
+                        ta nên thay đổi các loại lương thực khác nhau.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Làm sao để bỏ thuốc lá?</span>
+                <div class="content">
+                    <img src="./img/img16-6.jpg" alt="">
+                    <p>Sức khoẻ của chính bạn. Không hút thuốc lá tứzc là giảm thiểu dáng kể rủi ro mắc các bệnh ung thư
+                        và sức khoẻ sẽ tăng lên đáng kể so với khi còn hút thuốc.</p>
+                </div>
+                <a class="scrollTop" href="#scrollTop">Về đầu trang</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="title-heading">
+                <a href="#travel" id="travel">Du lịch</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Các tour mới nhất</span>
+                <ul>
+                    <li>Côn Minh - Đaị Lý - Lệ Giang</li>
+                    <li>Đến Macau xem casino</li>
+                    <li>Về Cà mau ăn tôm tít</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Các điểm du lịch nổi tiếng trên thế giới</span>
+                <ul>
+                    <li>Đảo Bali xinh đẹp - Indonexia</li>
+                    <li>Thành cổ Rome và tháp nghiêng Pisa</li>
+                    <li>Vạn Lý Trường Thành</li>
+                </ul>
+                <a class="scrollTop" href="#scrollTop">Về đầu trang</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="title-heading">
+                <a href="#foods" id="foods">Ẩm thực</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="list-content">
+                    <ul id="square-style">
+                        <li>Các món ăn mới trong tuần</li>
+                        <li>Chuyên mục dạy nấu ăn</li>
+                        <li>Món ngon Hà Nội</li>
+                        <li>Các món ăn dân dã ở miền Tây</li>
+                    </ul>
+                    <img src="./img/img16-7.jpg" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="title-heading">
+                <a href="#music" id="music">Âm nhạc</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Nhạc thiếu nhi</span>
+                <div class="list-content">
+                    <ul>
+                        <li>Nắng sân trường</li>
+                        <li>Mẹ yêu không nào</li>
+                        <li>Ba bà đi bán lợn con</li>
+                    </ul>
+                    <img src="./img/img16-8.jpg" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dân ca</span>
+                <div class="list-content" >
+                    <ul>
+                        <li>Bào dạt mấy trôi</li>
+                        <li>Mười thương</li>
+                        <li>Lý cây bông</li>
+                    </ul>
+                    <img src="./img/img16-9.jpg" alt="">
+                </div>
+                <a class="scrollTop" href="#scrollTop">Về đầu trang</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
